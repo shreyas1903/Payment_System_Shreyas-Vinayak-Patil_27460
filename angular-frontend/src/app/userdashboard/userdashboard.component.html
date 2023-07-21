@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+    <div class="sidebar">
+      <div class="logo">Payment_System</div>
+      <ul class="menu">
+        <li routerLink="/firstpage" routerLinkActive="active">
+          <i class="fa fa-home"></i> Logout
+        </li>
+        <li routerLink="/make-payment" routerLinkActive="active">
+          <i class="fa fa-money"></i> Make Payment
+        </li>
+        <li routerLink="/check-details" routerLinkActive="active">
+          <i class="fa fa-search"></i> Check Details
+        </li>
+        <li routerLink="/credit_card" routerLinkActive="active">
+          <i class="fa fa-list"></i> Bills to be Paid with credit_card
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

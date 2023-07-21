@@ -1,0 +1,60 @@
+<div class="payment-container">
+  <h2>Make Payment</h2>
+  <form (submit)="submitPaymentForm()">
+    <div class="form-group">
+      <label for="billNumber">Bill Number:</label>
+      <input
+        type="text"
+        id="billNumber"
+        name="billNumber"
+        [(ngModel)]="paymentData.billNumber"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="consumerName">Consumer Name:</label>
+      <input
+        type="text"
+        id="consumerName"
+        name="consumerName"
+        [(ngModel)]="paymentData.consumerName"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input
+        type="number"
+        id="amount"
+        name="amount"
+        [(ngModel)]="paymentData.amount"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="paymentDate">Date of Payment:</label>
+      <input
+        type="date"
+        id="paymentDate"
+        name="paymentDate"
+        [(ngModel)]="paymentData.paymentDate"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="paymentMode">Payment Mode:</label>
+      <select
+        id="paymentMode"
+        name="paymentMode"
+        [(ngModel)]="paymentData.paymentMode"
+        required
+      >
+        <option value="">Select Payment Mode</option>
+        <option value="gpay">Google Pay</option>
+        <option value="phonepay">PhonePe</option>
+      </select>
+    </div>
+    <button type="submit">Make Payment</button>
+    <button routerLink="/userdashboard" class="back-button">Back</button>
+  </form>
+</div>

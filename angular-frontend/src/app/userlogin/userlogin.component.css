@@ -1,0 +1,93 @@
+.user-login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+  }
+  
+  .user-login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  
+    animation: fadeIn 1s forwards;
+  }
+  
+  .user-login-container .error-message {
+    color: red;
+    margin-bottom: 10px;
+   
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .user-login-container .form-group {
+    margin-bottom: 15px;
+   
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .user-login-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-login-container input[type="text"],
+  .user-login-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-login-container .login-button,
+  .user-login-container .back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 45%;
+   
+    transition: transform 0.2s ease;
+  }
+  
+  .user-login-container .login-button:hover,
+  .user-login-container .back-button:hover {
+   
+    transform: scale(1.05);
+  }
+  
+  .user-login-container .back-button {
+    background-color: #6c757d;
+  }
+  
+  .user-login-container .back-button:hover {
+    background-color: #545b62;
+  }
+  
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

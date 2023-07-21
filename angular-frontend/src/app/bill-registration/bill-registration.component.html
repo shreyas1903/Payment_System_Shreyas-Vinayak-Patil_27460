@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="/employees" routerLinkActive="active" class="nav-link" >User List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="/create-employee" routerLinkActive="active" class="nav-link" >Add Users</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="/billregistration" routerLinkActive="active" class="nav-link" >Add Bills</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" routerLinkActive="active" class="nav-link">Logout</a>
+        </li>
+    </ul>
+</nav>
+<div class="bill-registration-container">
+    <h1>Bill Registration</h1>
+    <div class="form-group">
+      <label for="billerCode">Biller Code:</label>
+      <input type="text" id="billerCode" [(ngModel)]="billerCode" placeholder="Enter biller code">
+    </div>
+    <div class="form-group">
+      <label for="consumerNumber">Consumer Number:</label>
+      <input type="text" id="consumerNumber" [(ngModel)]="consumerNumber" placeholder="Enter consumer number">
+    </div>
+    <div class="form-group">
+      <label for="billNumber">Bill Number:</label>
+      <input type="text" id="billNumber" [(ngModel)]="billNumber" placeholder="Enter bill number">
+    </div>
+    <div class="form-group">
+      <label for="billAmount">Bill Amount:</label>
+      <input type="number" id="billAmount" [(ngModel)]="billAmount" placeholder="Enter bill amount">
+    </div>
+    <div class="form-group">
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" [(ngModel)]="dueDate">
+    </div>
+    <button (click)="registerBill()" class="register-button">Register Bill</button>
+  </div>
+  

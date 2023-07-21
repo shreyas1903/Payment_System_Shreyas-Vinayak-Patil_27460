@@ -1,0 +1,28 @@
+
+button {
+    background-color: #1a1a1b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Apply styles when the button is hovered */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Apply styles when the button is active (clicked) */
+  button.active {
+    background-color: #0056b3;
+  }
+  
+  /* Center the button horizontally and add some margin */
+  button.router-link-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  

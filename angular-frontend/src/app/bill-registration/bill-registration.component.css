@@ -1,0 +1,51 @@
+.bill-registration-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bill-registration-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+  }
+  
+  .bill-registration-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .bill-registration-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .bill-registration-container input[type="text"],
+  .bill-registration-container input[type="number"],
+  .bill-registration-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .bill-registration-container .register-button {
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .bill-registration-container .register-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+  
